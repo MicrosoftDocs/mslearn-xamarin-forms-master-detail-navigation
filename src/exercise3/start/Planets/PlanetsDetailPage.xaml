@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Planets.PlanetsDetailPage"
+             BackgroundColor="Black"
+             Title="{Binding Name}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid Padding="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+
+        <Image Source="{Binding Image}" HorizontalOptions="Center"
+               Grid.ColumnSpan="2"/>
+
+        <Label Text="Equitorial Diameter:" HorizontalTextAlignment="End"
+               Grid.Row="1" Grid.Column="0" />
+        <Label Text="{Binding EquitorialDiameter, StringFormat='{0} (relative to Earth)'}"
+               Grid.Row="1" Grid.Column="1" />
+
+        <Label Text="Mass:" HorizontalTextAlignment="End" 
+               Grid.Row="2" Grid.Column="0" />
+        <Label Text="{Binding Mass, StringFormat='{0} (relative to Earth)'}" 
+               Grid.Row="2" Grid.Column="1" />
+
+        <Label Text="Orbital Period:" HorizontalTextAlignment="End" 
+               Grid.Row="3" Grid.Column="0" />
+        <Label Text="{Binding OrbitalPeriod, StringFormat='{0} (years)'}" 
+               Grid.Row="3" Grid.Column="1" />
+
+        <Label Text="Rotation Period:" HorizontalTextAlignment="End" 
+               Grid.Row="4" Grid.Column="0" />
+        <Label Text="{Binding RotationPeriod, StringFormat='{0} (days)'}" 
+               Grid.Row="4" Grid.Column="1" />
+
+        <Label Text="Number of Moons:" HorizontalTextAlignment="End"
+               Grid.Row="5" Grid.Column="0" />
+        <Label Text="{Binding ConfirmedMoons}"
+               Grid.Row="5" Grid.Column="1" />
+
+        <Label Text="Has Rings:" HorizontalTextAlignment="End" 
+               Grid.Row="6" Grid.Column="0" />
+        <Label Text="{Binding HasRings}" 
+               Grid.Row="6" Grid.Column="1" />
+
+        <Label Text="Atmosphere:" HorizontalTextAlignment="End" 
+               Grid.Row="7" Grid.Column="0" />
+        <Label Text="{Binding Atmosphere}" 
+               Grid.Row="7" Grid.Column="1" />
+    </Grid>
+</ContentPage>

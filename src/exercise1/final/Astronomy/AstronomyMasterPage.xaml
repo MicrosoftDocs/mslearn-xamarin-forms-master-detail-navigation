@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Astronomy"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true"
+             x:Class="Astronomy.AstronomyMasterPage"
+             Title="Contoso Astronomy">
+
+    <StackLayout Margin="10">
+        <Label Text="Main Menu" FontSize="Medium" HorizontalTextAlignment="Center" />
+
+        <BoxView BackgroundColor="Gray" HeightRequest="1" />
+
+        <Button x:Name="btnSunrise" Text="Sunrise and Sunset" />
+        <Button x:Name="btnMoonPhase" Text="Moon Phase" />
+
+        <BoxView BackgroundColor="Gray" HeightRequest="1" />
+
+        <Button x:Name="btnEarth" Text="Earth Data" />
+        <Button x:Name="btnSun" Text="Sun Data" />
+        <Button x:Name="btnMoon" Text="Moon Data" />
+
+        <BoxView BackgroundColor="Gray" HeightRequest="1" />
+
+        <Button x:Name="btnAbout" Text="About Contoso Astronomy" />
+    </StackLayout>
+</ContentPage>
