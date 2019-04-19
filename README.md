@@ -1,3 +1,7 @@
+# Microsoft Learn: Display relationships in Xamarin.Forms with master-detail navigation
+
+[//]: # (TODO: Link back to Microsoft Learn module.)
+This project contains the source code for the **Display relationships in Xamarin.Forms with master-detail navigation** Microsoft Learn module.
 
 # Contributing
 
