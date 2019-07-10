@@ -10,7 +10,9 @@ namespace Astronomy
             var master = new AstronomyMasterPage();
 
             if (Device.RuntimePlatform == Device.iOS)
-                master.Icon = (FileImageSource)ImageSource.FromFile("nav-menu-icon.png");
+            {
+                master.IconImageSource = ImageSource.FromFile("nav-menu-icon.png");
+            }
 
             this.Master = master;
 
