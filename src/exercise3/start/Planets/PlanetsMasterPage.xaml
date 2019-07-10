@@ -4,11 +4,11 @@
              x:Class="Planets.PlanetsMasterPage"
              Title="Planets">
 
-    <ContentPage.Icon>
+    <ContentPage.IconImageSource>
         <OnPlatform x:TypeArguments="FileImageSource">
             <On Platform="iOS" Value="nav-menu-icon.png" />
         </OnPlatform>
-    </ContentPage.Icon>
+    </ContentPage.IconImageSource>
 
     <StackLayout VerticalOptions="Fill">
         <ListView x:Name="MenuItemsListView"
